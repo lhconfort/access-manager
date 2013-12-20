@@ -2,7 +2,7 @@ module AccessManager
   module Rules
     attr_accessor :access_tree
 
-    def grants_access_with(user_action, args={})
+    def grant_access_with(user_action, args={})
       if @access_tree.nil?
         @access_tree = { }
       end
