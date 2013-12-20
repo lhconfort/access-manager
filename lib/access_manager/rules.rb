@@ -18,7 +18,7 @@ module AccessManager
           end
 
           @access_tree[controller]['@all'] << user_action
-        else7
+        else
           actions.each do |action|
             if @access_tree[controller][action].nil?
               @access_tree[controller][action] = []
