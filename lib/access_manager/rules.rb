@@ -33,7 +33,7 @@ module AccessManager
     def access_granted?(controller, action, user_action)
       if @access_tree[controller.to_sym].nil?
         true
-      elsif @access_tree[controller.to_sym]['@all'].present?
+      elsif ((!@access_tree[controller.to_sym]['@all'].nil?) && @access_tree[controller.to_sym]['@all'].any?)
         @access_tree[controller.to_sym]['@all'].include?(user_action.to_sym)
       elsif @access_tree[controller.to_sym][action.to_sym].nil?
         true
