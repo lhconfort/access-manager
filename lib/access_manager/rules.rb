@@ -30,8 +30,6 @@ module AccessManager
       end
     end
 
-    private
-
     def access_granted?(controller, action, user_action)
       if @access_tree[controller.to_sym].nil?
         true
