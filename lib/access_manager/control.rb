@@ -5,7 +5,7 @@ module AccessManager
     end
 
     def can?(action)
-      actions.include?(action.to_s)
+      actions.map(&:to_s).include?(action.to_s)
     end
   end
 end
