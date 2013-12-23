@@ -31,6 +31,10 @@ module AccessManager
     end
 
     def access_granted?(controller, action, user_action)
+      if @access_tree.nil?
+        @access_tree = { }
+      end
+
       if @access_tree[controller.to_sym].nil?
         true
       elsif ((!@access_tree[controller.to_sym]['@all'].nil?) && @access_tree[controller.to_sym]['@all'].any?)
