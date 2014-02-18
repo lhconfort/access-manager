@@ -8,11 +8,11 @@ module AccessManager
       end
 
       args[:to].each do |controller, actions|
-        if actions == :all
-          if @access_tree[controller].nil?
-            @access_tree[controller] = { }
-          end
+        if @access_tree[controller].nil?
+          @access_tree[controller] = { }
+        end
 
+        if actions == :all
           if @access_tree[controller]['@all'].nil?
             @access_tree[controller]['@all'] = []
           end

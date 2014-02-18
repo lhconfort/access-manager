@@ -9,3 +9,7 @@
 ## v0.0.3
 
 * Bugfix nil variable
+
+## v0.0.4
+
+* Bugfixes
