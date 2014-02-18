@@ -13,3 +13,7 @@
 ## v0.0.4
 
 * Bugfixes
+
+## v0.0.5
+
+* Save all user grant keys as symbols

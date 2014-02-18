@@ -8,23 +8,23 @@ module AccessManager
       end
 
       args[:to].each do |controller, actions|
-        if @access_tree[controller].nil?
-          @access_tree[controller] = { }
+        if @access_tree[controller.to_sym].nil?
+          @access_tree[controller.to_sym] = { }
         end
 
         if actions == :all
-          if @access_tree[controller]['@all'].nil?
-            @access_tree[controller]['@all'] = []
+          if @access_tree[controller.to_sym]['@all'].nil?
+            @access_tree[controller.to_sym]['@all'] = []
           end
 
-          @access_tree[controller]['@all'] << user_action
+          @access_tree[controller.to_sym]['@all'] << user_action
         else
           actions.each do |action|
-            if @access_tree[controller][action].nil?
-              @access_tree[controller][action] = []
+            if @access_tree[controller.to_sym][action.to_sym].nil?
+              @access_tree[controller.to_sym][action.to_sym] = []
             end
 
-            @access_tree[controller][action] << user_action
+            @access_tree[controller.to_sym][action.to_sym] << user_action
           end
         end
       end
