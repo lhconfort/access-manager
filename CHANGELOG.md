@@ -17,3 +17,7 @@
 ## v0.0.5
 
 * Save all user grant keys as symbols
+
+## v0.0.6
+
+* Actions are deduced now by action_codes method
