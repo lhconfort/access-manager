@@ -29,3 +29,7 @@
 ## v0.1.1
 
 * Bugfixes
+
+## v0.1.2
+
+* Set access grants to instance
