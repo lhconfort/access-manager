@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/unformattmh/access_manager"
   spec.license       = "MIT"
 
-  spec.files         = Dir["LICENSE.md", "README.md", "CHANGELOG.md", "lib/**/*"]
+  spec.files         = Dir["LICENSE.md", "README.md", "CHANGELOG.md", "lib/**/*", "vendor/**/*"]
   spec.executables   = []
   spec.require_paths = ["lib"]
 

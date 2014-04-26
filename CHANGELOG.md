@@ -21,3 +21,7 @@
 ## v0.0.6
 
 * Actions are deduced now by action_codes method
+
+## v0.1.0
+
+* Added assets and view helpers
