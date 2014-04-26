@@ -1,5 +1,4 @@
 require 'access_manager/control'
-require 'access_manager/rules'
 require 'access_manager/version'
 
 if defined? (Rails)

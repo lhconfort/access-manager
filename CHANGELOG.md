@@ -25,3 +25,7 @@
 ## v0.1.0
 
 * Added assets and view helpers
+
+## v0.1.1
+
+* Bugfixes
